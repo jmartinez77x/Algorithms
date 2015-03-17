@@ -1,0 +1,16 @@
+
+Joe Martinez
+Maximum Subsequence Product
+Analysis File
+
+
+A large majority of the algorithm can be ignored as far as the time complexity is
+concerned because they are constants or lower order terms. The largest portions of 
+the algorithm are the two for loops and the fact that it uses recursion. 
+
+The time complexity is essentially the same as the the time complexity done in 
+class because the code each includes two recursive statements and two for loops.
+This leads to a time complexity of O(N*log(N)). Each problem is halved with each 
+call leaving a base case plus log(N) from the left over 1's. Then you multiply 
+both sides by N to get N + N*log(N) in which you can drop the single N leaving 
+you with N*log(N) as the final time complexity.  

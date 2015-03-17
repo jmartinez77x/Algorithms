@@ -1,0 +1,28 @@
+
+//Joe Martinez
+//Kth Largest with heapSort and quickSort
+//Runtime data
+
+Run 1:
+	Length of array     = 1000
+	Kth Largest value   = 100
+
+	Average heap time:  19.3 ms 
+	Average quick time: 0.6 ms	
+
+Run 2:
+	Length of array     = 5000
+	Kth Largest value   = 500
+
+	Average heap time:  270 ms 
+	Average quick time: 8.3 ms
+
+Run 3:
+	Length of array     = 10000
+	Kth Largest value   = 1000
+
+	Average heap time:  1480.6 ms 
+	Average quick time: 15 ms
+
+
+quickSort/quickSelect far outperformed heapSort. 

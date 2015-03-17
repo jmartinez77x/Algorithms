@@ -1,0 +1,79 @@
+
+Joe Martinez
+AVL Tree vs Red-Black Tree
+Outline and Analysis File
+
+
+DESIGN:
+	AVLNode CLASS 
+		insert function with rotations and check
+		remove(optional)
+
+	RBNode CLASS 
+		insert function with rotations and check
+		remove(optional)
+
+	MAIN 
+		3 arrays of equal size
+			Create an array in ascending order form 1 to 1000(a large number). The running time should be at least 1 min
+			Create an array which is the same as the first but in descending order (1000 to 1)
+			Create an array which has the same amount as the previous two but in random order. Use random number generator
+
+		AVL insert each array into its own, initially empty tree, insert sequentially from start to end. Measure and print the time for each tree
+
+		RB insert each array into its own, initially empty tree, insert sequentially from start to end. Measure and print the time for each tree
+
+	DELIVER (IN ZIP FILE)
+		Source code (with small array size, 10 to 20)
+		Performance analysis: record, compare, and analyze run time of building each tree
+
+
+ANAYLYSIS:
+
+	Sample size: 20000
+	Range size: 20000 
+
+	TRIAL 1
+		AVL ascending  time = 726 milliseconds
+		AVL descending time = 41  milliseconds
+		AVL random     time = 1   milliseconds
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		RB  ascending  time = 116 milliseconds
+		RB  descending time = 87  milliseconds
+		RB  random     time = 31  milliseconds
+
+	TRIAL 2
+		AVL ascending  time = 936 milliseconds
+		AVL descending time = 43  milliseconds
+		AVL random     time = 10  milliseconds
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		RB  ascending  time = 117 milliseconds
+		RB  descending time = 20  milliseconds
+		RB  random     time = 14  milliseconds
+
+	TRIAL 3
+		AVL ascending  time = 811 milliseconds
+		AVL descending time = 1   milliseconds
+		AVL random     time = 0   milliseconds
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		RB  ascending  time = 110 milliseconds
+		RB  descending time = 22  milliseconds
+		RB  random     time = 11  milliseconds
+
+	AVERAGES
+		AVL ascending  average = 824 milliseconds
+		AVL descending average = 28  milliseconds
+		AVL random     average = 4   milliseconds
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		RB  ascending  average = 114 milliseconds
+		RB  descending average = 43  milliseconds
+		RB  random     average = 19  milliseconds
+		
+	CONCLUSION
+		The data created by my AVL tree and Red-Black tree goes to show that overall the 
+		Red-Black tree is a better search tree. However it always goes back to the problem 
+		and problem size. The AVL tree performed better than the Red-Black tree with both
+		the descending and random data sets. But the Red-Black was able to insert the ascending
+		data far better and given that the difference for the descending and random trees was
+		not drastically different I can conclude that overall the Red-Black tree is a better 
+		and well rounded solution. 

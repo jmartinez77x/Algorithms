@@ -1,0 +1,30 @@
+
+Joe Martinez
+Maximum Subsequence Product
+Design File
+
+
+The algorith used is based on the idea of divide and conquer. It is a matter of splitting a 
+problem up into smaller and smaller problems, using recursion, until you reach a base case 
+which can easily be dealt with. 
+
+In this example the array of integers is split into two continually until only one number 
+remains. This number is returned to the next recursive call which uses it to determine the 
+product of the first two subproblems. This happens from left to right until the entire array
+has been processed. Throughout the run time, the program is remembering the highest and 
+lowest products as well as the index they are located. 
+
+When the array is done being processed the program finds the maximum product from either the
+left side or right side of the array and the positive or negative products produced across
+the entire array. 
+
+
+
+
+
+
+Design file: explain the algorithm you used, including how to divide the problem, how to solve the sub-problems and how to combine solutions.
+
+Source code.
+
+Analysis file: analyze the time complexity of your solution.
